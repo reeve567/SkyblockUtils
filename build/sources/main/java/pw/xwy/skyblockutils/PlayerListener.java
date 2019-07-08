@@ -50,43 +50,43 @@ public class PlayerListener {
 		this.main = main;
 	}
 
-	public static void drawStringAtHUDPosition(String string, HUDPositions position, FontRenderer fontRenderer, int xOffset, int yOffset, double scale, int color, boolean shadow, int lineOffset) {
+	public static void drawStringAtHUDPosition(String string, HUDPositions position, FontRenderer fontRenderer, int xOffset, int yOffset, int lineOffset) {
 		Minecraft mc = Minecraft.getMinecraft();
 		ScaledResolution res = new ScaledResolution(mc);
 
 		int screenWidth = res.getScaledWidth();
-		screenWidth /= scale;
+		screenWidth /= 1;
 		int screenHeight = res.getScaledHeight();
-		screenHeight /= scale;
+		screenHeight /= 1;
 
 		switch (position) {
 			case TOP_LEFT:
 				yOffset += lineOffset * 9;
-				drawStringLeft(string, fontRenderer, 2 + xOffset, 2 + yOffset, color, shadow);
+				drawStringLeft(string, fontRenderer, 2 + xOffset, 2 + yOffset, 0, true);
 				break;
 			case TOP_CENTER:
 				yOffset += lineOffset * 9;
-				drawStringCenter(string, fontRenderer, screenWidth / 2 + xOffset, 2 + yOffset, color, shadow);
+				drawStringCenter(string, fontRenderer, screenWidth / 2 + xOffset, 2 + yOffset, 0, true);
 				break;
 			case TOP_RIGHT:
 				yOffset += lineOffset * 9;
-				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, 2 + yOffset, color, shadow);
+				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, 2 + yOffset,0, true);
 				break;
 			case LEFT:
 				yOffset += lineOffset * 9;
-				drawStringLeft(string, fontRenderer, 2 + xOffset, screenHeight / 2 + yOffset, color, shadow);
+				drawStringLeft(string, fontRenderer, 2 + xOffset, screenHeight / 2 + yOffset, 0, true);
 				break;
 			case RIGHT:
 				yOffset += lineOffset * 9;
-				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, screenHeight / 2 + yOffset, color, shadow);
+				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, screenHeight / 2 + yOffset, 0, true);
 				break;
 			case BOTTOM_LEFT:
 				yOffset -= lineOffset * 9;
-				drawStringLeft(string, fontRenderer, 2 + xOffset, screenHeight - 9 + yOffset, color, shadow);
+				drawStringLeft(string, fontRenderer, 2 + xOffset, screenHeight - 9 + yOffset, 0, true);
 				break;
 			case BOTTOM_RIGHT:
 				yOffset -= lineOffset * 9;
-				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, screenHeight - 9 + yOffset, color, shadow);
+				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, screenHeight - 9 + yOffset, 0, true);
 		}
 	}
 
@@ -183,18 +183,27 @@ public class PlayerListener {
 
 	@SubscribeEvent
 	public void onRender(RenderGameOverlayEvent.Text event) {
-		if (!onSkyblock) return;
 		Minecraft mc = Minecraft.getMinecraft();
 		FontRenderer fontRenderer = mc.ingameGUI.getFontRenderer();
-		String debug = "?";
+		int i = 0;
 
-		drawStringAtHUDPosition(EnumChatFormatting.AQUA + "Skyblock", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, 1, 0, true, 0);
-		drawStringAtHUDPosition(EnumChatFormatting.GOLD + "Debug: " + debug, HUDPositions.TOP_LEFT, fontRenderer, 0, 0, 1, 0, true, 1);
+		if (onSkyblock)
+			drawStringAtHUDPosition(EnumChatFormatting.AQUA + "Skyblock", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+
+		if (main.sprintToggle) {
+			drawStringAtHUDPosition(EnumChatFormatting.GREEN + "Sprint Toggle", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+		}
+
+		if (!onSkyblock) return;
+
+		String debug = "?";
+		drawStringAtHUDPosition(EnumChatFormatting.GOLD + "Debug: " + debug, HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+
 		if (!warnings.isEmpty()) {
-			drawStringAtHUDPosition(EnumChatFormatting.RED + "Warnings: ", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, 1, 0, true, 2);
-			int i = 3;
+			drawStringAtHUDPosition(EnumChatFormatting.RED + "Warnings: ", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+
 			for (Warnings w : this.warnings) {
-				drawStringAtHUDPosition(EnumChatFormatting.RED + "  " + w.toString(), HUDPositions.TOP_LEFT, fontRenderer, 0, 0, 1, 0, true, i++);
+				drawStringAtHUDPosition(EnumChatFormatting.RED + "  " + w.toString(), HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
 			}
 		}
 	}
@@ -215,6 +224,7 @@ public class PlayerListener {
 	}
 
 	private void setArmorstandTags() {
+		if (!onSkyblock) return;
 		for (Entity entity : Minecraft.getMinecraft().theWorld.loadedEntityList) {
 			if (entity instanceof EntityArmorStand) {
 				EntityArmorStand armorStand = (EntityArmorStand) entity;

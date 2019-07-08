@@ -6,7 +6,13 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.item.EntityArmorStand;
+import net.minecraft.entity.monster.*;
+import net.minecraft.entity.passive.EntityChicken;
+import net.minecraft.entity.passive.EntityCow;
+import net.minecraft.entity.passive.EntityPig;
+import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.inventory.ContainerChest;
@@ -26,10 +32,7 @@ import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -45,48 +48,50 @@ public class PlayerListener {
 	private boolean hasGrapplingHook = false;
 	private HashMap<String, Integer> counts = new HashMap<>();
 	private List<Warnings> warnings = new ArrayList<>();
+	private Map<Mob, Integer> mobCount = new HashMap<>();
+	private Map<Class<? extends EntityLiving>, Integer> mobCount2 = new HashMap<>();
 
 	public PlayerListener(SkyblockUtils main) {
 		this.main = main;
 	}
 
-	public static void drawStringAtHUDPosition(String string, HUDPositions position, FontRenderer fontRenderer, int xOffset, int yOffset, double scale, int color, boolean shadow, int lineOffset) {
+	public static void drawStringAtHUDPosition(String string, HUDPositions position, FontRenderer fontRenderer, int xOffset, int yOffset, int lineOffset) {
 		Minecraft mc = Minecraft.getMinecraft();
 		ScaledResolution res = new ScaledResolution(mc);
 
 		int screenWidth = res.getScaledWidth();
-		screenWidth /= scale;
+		screenWidth /= 1;
 		int screenHeight = res.getScaledHeight();
-		screenHeight /= scale;
+		screenHeight /= 1;
 
 		switch (position) {
 			case TOP_LEFT:
 				yOffset += lineOffset * 9;
-				drawStringLeft(string, fontRenderer, 2 + xOffset, 2 + yOffset, color, shadow);
+				drawStringLeft(string, fontRenderer, 2 + xOffset, 2 + yOffset, 0, true);
 				break;
 			case TOP_CENTER:
 				yOffset += lineOffset * 9;
-				drawStringCenter(string, fontRenderer, screenWidth / 2 + xOffset, 2 + yOffset, color, shadow);
+				drawStringCenter(string, fontRenderer, screenWidth / 2 + xOffset, 2 + yOffset, 0, true);
 				break;
 			case TOP_RIGHT:
 				yOffset += lineOffset * 9;
-				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, 2 + yOffset, color, shadow);
+				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, 2 + yOffset, 0, true);
 				break;
 			case LEFT:
 				yOffset += lineOffset * 9;
-				drawStringLeft(string, fontRenderer, 2 + xOffset, screenHeight / 2 + yOffset, color, shadow);
+				drawStringLeft(string, fontRenderer, 2 + xOffset, screenHeight / 2 + yOffset, 0, true);
 				break;
 			case RIGHT:
 				yOffset += lineOffset * 9;
-				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, screenHeight / 2 + yOffset, color, shadow);
+				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, screenHeight / 2 + yOffset, 0, true);
 				break;
 			case BOTTOM_LEFT:
 				yOffset -= lineOffset * 9;
-				drawStringLeft(string, fontRenderer, 2 + xOffset, screenHeight - 9 + yOffset, color, shadow);
+				drawStringLeft(string, fontRenderer, 2 + xOffset, screenHeight - 9 + yOffset, 0, true);
 				break;
 			case BOTTOM_RIGHT:
 				yOffset -= lineOffset * 9;
-				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, screenHeight - 9 + yOffset, color, shadow);
+				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, screenHeight - 9 + yOffset, 0, true);
 		}
 	}
 
@@ -183,18 +188,27 @@ public class PlayerListener {
 
 	@SubscribeEvent
 	public void onRender(RenderGameOverlayEvent.Text event) {
-		if (!onSkyblock) return;
 		Minecraft mc = Minecraft.getMinecraft();
 		FontRenderer fontRenderer = mc.ingameGUI.getFontRenderer();
-		String debug = "?";
+		int i = 0;
 
-		drawStringAtHUDPosition(EnumChatFormatting.AQUA + "Skyblock", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, 1, 0, true, 0);
-		drawStringAtHUDPosition(EnumChatFormatting.GOLD + "Debug: " + debug, HUDPositions.TOP_LEFT, fontRenderer, 0, 0, 1, 0, true, 1);
+		if (onSkyblock)
+			drawStringAtHUDPosition(EnumChatFormatting.AQUA + "Skyblock", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+
+		if (main.sprintToggle) {
+			drawStringAtHUDPosition(EnumChatFormatting.GREEN + "Sprint Toggle", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+		}
+
+		if (!onSkyblock) return;
+
+		String debug = "?";
+		drawStringAtHUDPosition(EnumChatFormatting.GOLD + "Debug: " + debug, HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+
 		if (!warnings.isEmpty()) {
-			drawStringAtHUDPosition(EnumChatFormatting.RED + "Warnings: ", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, 1, 0, true, 2);
-			int i = 3;
+			drawStringAtHUDPosition(EnumChatFormatting.RED + "Warnings: ", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+
 			for (Warnings w : this.warnings) {
-				drawStringAtHUDPosition(EnumChatFormatting.RED + "  " + w.toString(), HUDPositions.TOP_LEFT, fontRenderer, 0, 0, 1, 0, true, i++);
+				drawStringAtHUDPosition(EnumChatFormatting.RED + "  " + w.toString(), HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
 			}
 		}
 	}
@@ -208,24 +222,44 @@ public class PlayerListener {
 		tick++;
 		if (tick % tickInterval == 0) {
 			if (mc.thePlayer == null) return;
-			setArmorstandTags();
+			checkEntities();
 			countInventory(mc.thePlayer);
 			updateWarnings(hasGrapplingHook);
 		}
 	}
 
-	private void setArmorstandTags() {
-		if (!onSkyblock) return;
+	private void checkEntities() {
+		mobCount = new HashMap<>();
 		for (Entity entity : Minecraft.getMinecraft().theWorld.loadedEntityList) {
-			if (entity instanceof EntityArmorStand) {
-				EntityArmorStand armorStand = (EntityArmorStand) entity;
-				if (armorStand.getCurrentArmor(3) != null && armorStand.getCurrentArmor(3).getItem() instanceof ItemSkull) {
-					armorStand.setAlwaysRenderNameTag(true);
-					if (armorStand.getCurrentArmor(2) != null)
-						armorStand.setCustomNameTag(EnumChatFormatting.GOLD + "Minion");
-					else
-						armorStand.setCustomNameTag(EnumChatFormatting.LIGHT_PURPLE + "Fairy Soul");
+			setArmorstandTag(entity);
+			mobCount(entity);
+		}
+	}
+
+	private void mobCount(Entity entity) {
+		if (main.mobsToggle) {
+			if (entity instanceof EntityLiving) {
+				for (Mob m : Mob.values()) {
+					Class<? extends EntityLiving> clazz = m.getClazz();
+					if (entity.getClass().isAssignableFrom(clazz)) {
+						mobCount.put(m, mobCount.getOrDefault(m, 0) + 1);
+					}
 				}
+			}
+		}
+	}
+
+	private void setArmorstandTag(Entity entity) {
+		if (!onSkyblock) return;
+
+		if (entity instanceof EntityArmorStand) {
+			EntityArmorStand armorStand = (EntityArmorStand) entity;
+			if (armorStand.getCurrentArmor(3) != null && armorStand.getCurrentArmor(3).getItem() instanceof ItemSkull) {
+				armorStand.setAlwaysRenderNameTag(true);
+				if (armorStand.getCurrentArmor(2) != null)
+					armorStand.setCustomNameTag(EnumChatFormatting.GOLD + "Minion");
+				else
+					armorStand.setCustomNameTag(EnumChatFormatting.LIGHT_PURPLE + "Fairy Soul");
 			}
 		}
 	}
@@ -301,6 +335,37 @@ public class PlayerListener {
 
 		@Override
 		public String toString() {
+			return display;
+		}
+	}
+
+	public enum Mob {
+		SPIDER(EntitySpider.class, "Spiders"),
+		MAGMA_CUBE(EntityMagmaCube.class, "Magma Cubes"),
+		SLIME(EntitySlime.class, "Slimes"),
+		ZOMBIE(EntityZombie.class, "Zombies"),
+		SKELETON(EntitySkeleton.class, "Skeletons"),
+		ENDERMAN(EntityEnderman.class, "Endermen"),
+		CREEPER(EntityCreeper.class, "Creepers"),
+		COW(EntityCow.class, "Cows"),
+		SHEEP(EntitySheep.class, "Sheep"),
+		CHICKEN(EntityChicken.class, "Chickens"),
+		PIG(EntityPig.class, "Pigs"),
+		BLAZE(EntityBlaze.class, "Blazes"),
+		GHAST(EntityGhast.class, "Ghasts");
+		private Class<? extends EntityLiving> clazz;
+		private String display;
+
+		Mob(Class<? extends EntityLiving> clazz, String display) {
+			this.clazz = clazz;
+			this.display = display;
+		}
+
+		public Class<? extends EntityLiving> getClazz() {
+			return clazz;
+		}
+
+		public String getDisplay() {
 			return display;
 		}
 	}
