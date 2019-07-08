@@ -1,0 +1,614 @@
+Symbol range map extraction starting
+Processing 3 files
+processing pw\xwy\skyblockutils\MinionsCommand.java
+@|pw\xwy\skyblockutils\MinionsCommand.java|8|28|pw.xwy.skyblockutils|package|pw.xwy.skyblockutils|(file)
+Class Start: pw.xwy.skyblockutils.MinionsCommand
+   Method Start: getCommandName()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|492|506|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|485|491|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|561|576|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|554|560|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\MinionsCommand.java|577|591|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|pw\xwy\skyblockutils\MinionsCommand.java|592|606|iCommandSender|param|pw.xwy.skyblockutils.MinionsCommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|iCommandSender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\MinionsCommand.java|653|667|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\MinionsCommand.java|668|682|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|pw\xwy\skyblockutils\MinionsCommand.java|683|697|iCommandSender|param|pw.xwy.skyblockutils.MinionsCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|iCommandSender|0
+      @|pw\xwy\skyblockutils\MinionsCommand.java|699|705|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\MinionsCommand.java|708|715|strings|param|pw.xwy.skyblockutils.MinionsCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|strings|1
+      @|pw\xwy\skyblockutils\MinionsCommand.java|721|735|iCommandSender|param|pw.xwy.skyblockutils.MinionsCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|iCommandSender|0
+      @|pw\xwy\skyblockutils\MinionsCommand.java|736|750|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|pw\xwy\skyblockutils\MinionsCommand.java|755|772|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|pw\xwy\skyblockutils\MinionsCommand.java|773|791|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|792|796|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|pw\xwy\skyblockutils\MinionsCommand.java|845|849|List|class|java.util.List
+      @|pw\xwy\skyblockutils\MinionsCommand.java|850|856|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\MinionsCommand.java|873|882|ArrayList|class|java.util.ArrayList
+      @|pw\xwy\skyblockutils\MinionsCommand.java|895|901|Entity|class|net.minecraft.entity.Entity
+      @|pw\xwy\skyblockutils\MinionsCommand.java|911|925|iCommandSender|param|pw.xwy.skyblockutils.MinionsCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|iCommandSender|0
+      @|pw\xwy\skyblockutils\MinionsCommand.java|926|940|getEntityWorld|method|net.minecraft.command.ICommandSender|getEntityWorld|()Lnet/minecraft/world/World;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|943|959|loadedEntityList|field|net.minecraft.world.World|loadedEntityList
+      @|pw\xwy\skyblockutils\MinionsCommand.java|988|1004|EntityArmorStand|class|net.minecraft.entity.item.EntityArmorStand
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1012|1028|EntityArmorStand|class|net.minecraft.entity.item.EntityArmorStand
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1043|1059|EntityArmorStand|class|net.minecraft.entity.item.EntityArmorStand
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1088|1103|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1136|1151|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1155|1162|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1176|1185|ItemSkull|class|net.minecraft.item.ItemSkull
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1220|1223|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1224|1242|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1243|1252|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1263|1281|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1282|1287|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1301|1312|getPosition|method|net.minecraft.command.ICommandSender|getPosition|()Lnet/minecraft/util/BlockPos;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1315|1319|getX|method|net.minecraft.util.Vec3i|getX|()I
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1324|1342|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1343|1352|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1364|1382|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1383|1388|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1402|1413|getPosition|method|net.minecraft.command.ICommandSender|getPosition|()Lnet/minecraft/util/BlockPos;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1416|1420|getY|method|net.minecraft.util.Vec3i|getY|()I
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1425|1443|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1444|1453|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1465|1483|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1484|1489|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1503|1514|getPosition|method|net.minecraft.command.ICommandSender|getPosition|()Lnet/minecraft/util/BlockPos;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1517|1521|getZ|method|net.minecraft.util.Vec3i|getZ|()I
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1674|1688|iCommandSender|param|pw.xwy.skyblockutils.MinionsCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|iCommandSender|0
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1689|1703|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1708|1725|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1726|1744|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1745|1754|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1770|1788|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1789|1794|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1814|1820|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1840|1854|iCommandSender|param|pw.xwy.skyblockutils.MinionsCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|iCommandSender|0
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1855|1869|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1874|1891|ChatComponentText|class|net.minecraft.util.ChatComponentText
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: getRequiredPermissionLevel()I
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1929|1955|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: getCommandAliases()Ljava/util/List;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|2008|2025|getCommandAliases|method|net.minecraft.command.ICommand|getCommandAliases|()Ljava/util/List;
+      @|pw\xwy\skyblockutils\MinionsCommand.java|2000|2006|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\MinionsCommand.java|1995|1999|List|class|java.util.List
+      @|pw\xwy\skyblockutils\MinionsCommand.java|2039|2050|Collections|class|java.util.Collections
+      @|pw\xwy\skyblockutils\MinionsCommand.java|2051|2064|singletonList|method|java.util.Collections|singletonList|(Ljava/lang/Object;)Ljava/util/List;
+   Method End: getCommandAliases()Ljava/util/List;
+Class End  : pw.xwy.skyblockutils.MinionsCommand
+endProcessing pw\xwy\skyblockutils\MinionsCommand.java
+
+processing pw\xwy\skyblockutils\PlayerListener.java
+@|pw\xwy\skyblockutils\PlayerListener.java|8|28|pw.xwy.skyblockutils|package|pw.xwy.skyblockutils|(file)
+Class Start: pw.xwy.skyblockutils.PlayerListener
+   @|pw\xwy\skyblockutils\PlayerListener.java|1496|1503|Pattern|class|java.util.regex.Pattern
+   @|pw\xwy\skyblockutils\PlayerListener.java|1504|1523|STRIP_COLOR_PATTERN|field|pw.xwy.skyblockutils.PlayerListener|STRIP_COLOR_PATTERN|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1526|1533|Pattern|class|java.util.regex.Pattern
+   @|pw\xwy\skyblockutils\PlayerListener.java|1534|1541|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+   @|pw\xwy\skyblockutils\PlayerListener.java|1598|1610|tickInterval|field|pw.xwy.skyblockutils.PlayerListener|tickInterval|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1627|1640|SkyblockUtils|class|pw.xwy.skyblockutils.SkyblockUtils
+   @|pw\xwy\skyblockutils\PlayerListener.java|1641|1645|main|field|pw.xwy.skyblockutils.PlayerListener|main|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1661|1665|tick|field|pw.xwy.skyblockutils.PlayerListener|tick|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1688|1696|onIsland|field|pw.xwy.skyblockutils.PlayerListener|onIsland|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1715|1725|onSkyblock|field|pw.xwy.skyblockutils.PlayerListener|onSkyblock|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1744|1753|chestOpen|field|pw.xwy.skyblockutils.PlayerListener|chestOpen|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1780|1796|hasGrapplingHook|field|pw.xwy.skyblockutils.PlayerListener|hasGrapplingHook|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1823|1829|String|class|java.lang.String
+   @|pw\xwy\skyblockutils\PlayerListener.java|1831|1838|Integer|class|java.lang.Integer
+   @|pw\xwy\skyblockutils\PlayerListener.java|1815|1822|HashMap|class|java.util.HashMap
+   @|pw\xwy\skyblockutils\PlayerListener.java|1840|1846|counts|field|pw.xwy.skyblockutils.PlayerListener|counts|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1853|1860|HashMap|class|java.util.HashMap
+   @|pw\xwy\skyblockutils\PlayerListener.java|1880|1888|Warnings|class|pw.xwy.skyblockutils.PlayerListener.Warnings
+   @|pw\xwy\skyblockutils\PlayerListener.java|1875|1879|List|class|java.util.List
+   @|pw\xwy\skyblockutils\PlayerListener.java|1890|1898|warnings|field|pw.xwy.skyblockutils.PlayerListener|warnings|
+   @|pw\xwy\skyblockutils\PlayerListener.java|1905|1914|ArrayList|class|java.util.ArrayList
+   Method Start: PlayerListener(Lpw/xwy/skyblockutils/SkyblockUtils;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|1929|1943|PlayerListener|method|pw.xwy.skyblockutils.PlayerListener|PlayerListener|(Lpw/xwy/skyblockutils/SkyblockUtils;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|1944|1957|SkyblockUtils|class|pw.xwy.skyblockutils.SkyblockUtils
+      @|pw\xwy\skyblockutils\PlayerListener.java|1958|1962|main|param|pw.xwy.skyblockutils.PlayerListener|PlayerListener|(Lpw/xwy/skyblockutils/SkyblockUtils;)V|main|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|1973|1977|main|field|pw.xwy.skyblockutils.PlayerListener|main
+      @|pw\xwy\skyblockutils\PlayerListener.java|1980|1984|main|param|pw.xwy.skyblockutils.PlayerListener|PlayerListener|(Lpw/xwy/skyblockutils/SkyblockUtils;)V|main|0
+   Method End: PlayerListener(Lpw/xwy/skyblockutils/SkyblockUtils;)V
+   Method Start: drawStringAtHUDPosition(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|2010|2033|drawStringAtHUDPosition|method|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|2034|2040|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|2041|2047|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|2049|2061|HUDPositions|class|pw.xwy.skyblockutils.PlayerListener.HUDPositions
+      @|pw\xwy\skyblockutils\PlayerListener.java|2062|2070|position|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|position|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|2072|2084|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|pw\xwy\skyblockutils\PlayerListener.java|2085|2097|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|fontRenderer|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|2103|2110|xOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|xOffset|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|2116|2123|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|2132|2137|scale|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|scale|5
+      @|pw\xwy\skyblockutils\PlayerListener.java|2143|2148|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|color|6
+      @|pw\xwy\skyblockutils\PlayerListener.java|2158|2164|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|shadow|7
+      @|pw\xwy\skyblockutils\PlayerListener.java|2170|2180|lineOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|lineOffset|8
+      @|pw\xwy\skyblockutils\PlayerListener.java|2186|2195|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|2201|2210|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|2211|2223|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|2229|2245|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
+      @|pw\xwy\skyblockutils\PlayerListener.java|2256|2272|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
+      @|pw\xwy\skyblockutils\PlayerListener.java|2303|2317|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|pw\xwy\skyblockutils\PlayerListener.java|2338|2343|scale|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|scale|5
+      @|pw\xwy\skyblockutils\PlayerListener.java|2370|2385|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|pw\xwy\skyblockutils\PlayerListener.java|2407|2412|scale|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|scale|5
+      @|pw\xwy\skyblockutils\PlayerListener.java|2425|2433|position|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|position|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|2445|2453|TOP_LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|2459|2466|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|2470|2480|lineOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|lineOffset|8
+      @|pw\xwy\skyblockutils\PlayerListener.java|2490|2504|drawStringLeft|method|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|2505|2511|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|2513|2525|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|fontRenderer|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|2531|2538|xOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|xOffset|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|2544|2551|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|2553|2558|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|color|6
+      @|pw\xwy\skyblockutils\PlayerListener.java|2560|2566|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|shadow|7
+      @|pw\xwy\skyblockutils\PlayerListener.java|2588|2598|TOP_CENTER|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_CENTER
+      @|pw\xwy\skyblockutils\PlayerListener.java|2604|2611|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|2615|2625|lineOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|lineOffset|8
+      @|pw\xwy\skyblockutils\PlayerListener.java|2635|2651|drawStringCenter|method|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|2652|2658|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|2660|2672|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|fontRenderer|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|2692|2699|xOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|xOffset|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|2705|2712|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|2714|2719|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|color|6
+      @|pw\xwy\skyblockutils\PlayerListener.java|2721|2727|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|shadow|7
+      @|pw\xwy\skyblockutils\PlayerListener.java|2749|2758|TOP_RIGHT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_RIGHT
+      @|pw\xwy\skyblockutils\PlayerListener.java|2764|2771|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|2775|2785|lineOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|lineOffset|8
+      @|pw\xwy\skyblockutils\PlayerListener.java|2795|2810|drawStringRight|method|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|2811|2817|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|2819|2831|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|fontRenderer|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|2851|2858|xOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|xOffset|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|2864|2871|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|2873|2878|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|color|6
+      @|pw\xwy\skyblockutils\PlayerListener.java|2880|2886|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|shadow|7
+      @|pw\xwy\skyblockutils\PlayerListener.java|2908|2912|LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|2918|2925|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|2929|2939|lineOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|lineOffset|8
+      @|pw\xwy\skyblockutils\PlayerListener.java|2949|2963|drawStringLeft|method|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|2964|2970|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|2972|2984|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|fontRenderer|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|2990|2997|xOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|xOffset|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|3018|3025|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3027|3032|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|color|6
+      @|pw\xwy\skyblockutils\PlayerListener.java|3034|3040|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|shadow|7
+      @|pw\xwy\skyblockutils\PlayerListener.java|3062|3067|RIGHT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|RIGHT
+      @|pw\xwy\skyblockutils\PlayerListener.java|3073|3080|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3084|3094|lineOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|lineOffset|8
+      @|pw\xwy\skyblockutils\PlayerListener.java|3104|3119|drawStringRight|method|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3120|3126|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|3128|3140|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|fontRenderer|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|3160|3167|xOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|xOffset|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|3188|3195|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3197|3202|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|color|6
+      @|pw\xwy\skyblockutils\PlayerListener.java|3204|3210|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|shadow|7
+      @|pw\xwy\skyblockutils\PlayerListener.java|3232|3243|BOTTOM_LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|BOTTOM_LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|3249|3256|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3260|3270|lineOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|lineOffset|8
+      @|pw\xwy\skyblockutils\PlayerListener.java|3280|3294|drawStringLeft|method|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3295|3301|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|3303|3315|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|fontRenderer|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|3321|3328|xOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|xOffset|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|3349|3356|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3358|3363|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|color|6
+      @|pw\xwy\skyblockutils\PlayerListener.java|3365|3371|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|shadow|7
+      @|pw\xwy\skyblockutils\PlayerListener.java|3393|3405|BOTTOM_RIGHT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|BOTTOM_RIGHT
+      @|pw\xwy\skyblockutils\PlayerListener.java|3411|3418|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3422|3432|lineOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|lineOffset|8
+      @|pw\xwy\skyblockutils\PlayerListener.java|3442|3457|drawStringRight|method|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3458|3464|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|3466|3478|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|fontRenderer|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|3498|3505|xOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|xOffset|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|3526|3533|yOffset|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|yOffset|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3535|3540|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|color|6
+      @|pw\xwy\skyblockutils\PlayerListener.java|3542|3548|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V|shadow|7
+   Method End: drawStringAtHUDPosition(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V
+   Method Start: drawStringCenter(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3579|3595|drawStringCenter|method|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3596|3602|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|3603|3609|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|3611|3623|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|pw\xwy\skyblockutils\PlayerListener.java|3624|3636|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|fontRenderer|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|3642|3643|x|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|x|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|3649|3650|y|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|y|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|3656|3661|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|color|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3671|3677|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|shadow|5
+      @|pw\xwy\skyblockutils\PlayerListener.java|3683|3695|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|fontRenderer|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|3696|3706|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;FFIZ)I
+      @|pw\xwy\skyblockutils\PlayerListener.java|3707|3713|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|3715|3716|x|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|x|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|3719|3731|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|fontRenderer|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|3732|3746|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|pw\xwy\skyblockutils\PlayerListener.java|3747|3753|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|3760|3761|y|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|y|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|3763|3768|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|color|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3770|3776|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringCenter|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|shadow|5
+   Method End: drawStringCenter(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+   Method Start: drawStringLeft(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3803|3817|drawStringLeft|method|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3818|3824|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|3825|3831|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|3833|3845|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|pw\xwy\skyblockutils\PlayerListener.java|3846|3858|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|fontRenderer|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|3864|3865|x|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|x|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|3871|3872|y|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|y|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|3878|3883|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|color|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3893|3899|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|shadow|5
+      @|pw\xwy\skyblockutils\PlayerListener.java|3905|3917|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|fontRenderer|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|3918|3928|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;FFIZ)I
+      @|pw\xwy\skyblockutils\PlayerListener.java|3929|3935|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|3937|3938|x|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|x|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|3940|3941|y|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|y|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|3943|3948|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|color|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|3950|3956|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringLeft|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|shadow|5
+   Method End: drawStringLeft(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+   Method Start: drawStringRight(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3983|3998|drawStringRight|method|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|3999|4005|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|4006|4012|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|4014|4026|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|pw\xwy\skyblockutils\PlayerListener.java|4027|4039|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|fontRenderer|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|4045|4046|x|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|x|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|4052|4053|y|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|y|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|4059|4064|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|color|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|4074|4080|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|shadow|5
+      @|pw\xwy\skyblockutils\PlayerListener.java|4086|4098|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|fontRenderer|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|4099|4109|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;FFIZ)I
+      @|pw\xwy\skyblockutils\PlayerListener.java|4110|4116|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|4118|4119|x|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|x|2
+      @|pw\xwy\skyblockutils\PlayerListener.java|4122|4134|fontRenderer|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|fontRenderer|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|4135|4149|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|pw\xwy\skyblockutils\PlayerListener.java|4150|4156|string|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|string|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|4159|4160|y|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|y|3
+      @|pw\xwy\skyblockutils\PlayerListener.java|4162|4167|color|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|color|4
+      @|pw\xwy\skyblockutils\PlayerListener.java|4169|4175|shadow|param|pw.xwy.skyblockutils.PlayerListener|drawStringRight|(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V|shadow|5
+   Method End: drawStringRight(Ljava/lang/String;Lnet/minecraft/client/gui/FontRenderer;IIIZ)V
+   Method Start: stripColor(Ljava/lang/String;)Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|4205|4215|stripColor|method|pw.xwy.skyblockutils.PlayerListener|stripColor|(Ljava/lang/String;)Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|4198|4204|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|4222|4228|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|4229|4234|input|param|pw.xwy.skyblockutils.PlayerListener|stripColor|(Ljava/lang/String;)Ljava/lang/String;|input|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|4247|4266|STRIP_COLOR_PATTERN|field|pw.xwy.skyblockutils.PlayerListener|STRIP_COLOR_PATTERN
+      @|pw\xwy\skyblockutils\PlayerListener.java|4267|4274|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|pw\xwy\skyblockutils\PlayerListener.java|4275|4280|input|param|pw.xwy.skyblockutils.PlayerListener|stripColor|(Ljava/lang/String;)Ljava/lang/String;|input|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|4282|4292|replaceAll|method|java.util.regex.Matcher|replaceAll|(Ljava/lang/String;)Ljava/lang/String;
+   Method End: stripColor(Ljava/lang/String;)Ljava/lang/String;
+   Method Start: updateWarnings([Z)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|4316|4330|updateWarnings|method|pw.xwy.skyblockutils.PlayerListener|updateWarnings|([Z)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|4342|4348|values|param|pw.xwy.skyblockutils.PlayerListener|updateWarnings|([Z)V|values|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|4354|4362|warnings|field|pw.xwy.skyblockutils.PlayerListener|warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|4369|4378|ArrayList|class|java.util.ArrayList
+      @|pw\xwy\skyblockutils\PlayerListener.java|4391|4397|values|param|pw.xwy.skyblockutils.PlayerListener|updateWarnings|([Z)V|values|0
+      Field: Array Length, skipping
+      @|pw\xwy\skyblockutils\PlayerListener.java|4421|4427|values|param|pw.xwy.skyblockutils.PlayerListener|updateWarnings|([Z)V|values|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|4432|4440|warnings|field|pw.xwy.skyblockutils.PlayerListener|warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|4441|4444|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|4445|4453|Warnings|class|pw.xwy.skyblockutils.PlayerListener.Warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|4454|4468|GRAPPLING_HOOK|field|pw.xwy.skyblockutils.PlayerListener.Warnings|GRAPPLING_HOOK
+      @|pw\xwy\skyblockutils\PlayerListener.java|4485|4493|warnings|field|pw.xwy.skyblockutils.PlayerListener|warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|4494|4497|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|4498|4506|Warnings|class|pw.xwy.skyblockutils.PlayerListener.Warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|4507|4521|GRAPPLING_HOOK|field|pw.xwy.skyblockutils.PlayerListener.Warnings|GRAPPLING_HOOK
+   Method End: updateWarnings([Z)V
+   Method Start: checkIfOnSkyblockAndIsland()V
+      @|pw\xwy\skyblockutils\PlayerListener.java|4545|4571|checkIfOnSkyblockAndIsland|method|pw.xwy.skyblockutils.PlayerListener|checkIfOnSkyblockAndIsland|()V
+   Method End: checkIfOnSkyblockAndIsland()V
+   Method Start: onRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Pre;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|6280|6288|onRender|method|pw.xwy.skyblockutils.PlayerListener|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Pre;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|6289|6315|RenderGameOverlayEvent.Pre|class|net.minecraftforge.client.event.RenderGameOverlayEvent.Pre
+      @|pw\xwy\skyblockutils\PlayerListener.java|6316|6317|e|param|pw.xwy.skyblockutils.PlayerListener|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Pre;)V|e|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|6323|6349|checkIfOnSkyblockAndIsland|method|pw.xwy.skyblockutils.PlayerListener|checkIfOnSkyblockAndIsland|()V
+      @|pw\xwy\skyblockutils\PlayerListener.java|6359|6369|onSkyblock|field|pw.xwy.skyblockutils.PlayerListener|onSkyblock
+      @|pw\xwy\skyblockutils\PlayerListener.java|6376|6390|GuiIngameForge|class|net.minecraftforge.client.GuiIngameForge
+      @|pw\xwy\skyblockutils\PlayerListener.java|6391|6402|renderArmor|field|net.minecraftforge.client.GuiIngameForge|renderArmor
+      @|pw\xwy\skyblockutils\PlayerListener.java|6415|6429|GuiIngameForge|class|net.minecraftforge.client.GuiIngameForge
+      @|pw\xwy\skyblockutils\PlayerListener.java|6430|6440|renderFood|field|net.minecraftforge.client.GuiIngameForge|renderFood
+   Method End: onRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Pre;)V
+   Method Start: onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|6488|6497|onTooltip|method|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|6498|6514|ItemTooltipEvent|class|net.minecraftforge.event.entity.player.ItemTooltipEvent
+      @|pw\xwy\skyblockutils\PlayerListener.java|6515|6520|event|param|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|6532|6537|event|param|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|6538|6550|entityPlayer|field|net.minecraftforge.event.entity.player.PlayerEvent|entityPlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|6551|6564|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|pw\xwy\skyblockutils\PlayerListener.java|6576|6590|ContainerChest|class|net.minecraft.inventory.ContainerChest
+      @|pw\xwy\skyblockutils\PlayerListener.java|6598|6607|chestOpen|field|pw.xwy.skyblockutils.PlayerListener|chestOpen
+      @|pw\xwy\skyblockutils\PlayerListener.java|6628|6637|chestOpen|field|pw.xwy.skyblockutils.PlayerListener|chestOpen
+      @|pw\xwy\skyblockutils\PlayerListener.java|6646|6651|event|param|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|6652|6664|entityPlayer|field|net.minecraftforge.event.entity.player.PlayerEvent|entityPlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|6665|6678|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|pw\xwy\skyblockutils\PlayerListener.java|6690|6704|ContainerChest|class|net.minecraft.inventory.ContainerChest
+      @|pw\xwy\skyblockutils\PlayerListener.java|6732|6746|ContainerChest|class|net.minecraft.inventory.ContainerChest
+      @|pw\xwy\skyblockutils\PlayerListener.java|6756|6770|ContainerChest|class|net.minecraft.inventory.ContainerChest
+      @|pw\xwy\skyblockutils\PlayerListener.java|6772|6777|event|param|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|6778|6790|entityPlayer|field|net.minecraftforge.event.entity.player.PlayerEvent|entityPlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|6791|6804|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|pw\xwy\skyblockutils\PlayerListener.java|6815|6824|ItemStack|class|net.minecraft.item.ItemStack
+      @|pw\xwy\skyblockutils\PlayerListener.java|6843|6855|getInventory|method|net.minecraft.inventory.Container|getInventory|()Ljava/util/List;
+      @|pw\xwy\skyblockutils\PlayerListener.java|6909|6923|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|6926|6942|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|6943|6948|event|param|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|6949|6958|itemStack|field|net.minecraftforge.event.entity.player.ItemTooltipEvent|itemStack
+      @|pw\xwy\skyblockutils\PlayerListener.java|6959|6973|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|7005|7014|stackSize|field|net.minecraft.item.ItemStack|stackSize
+      @|pw\xwy\skyblockutils\PlayerListener.java|7026|7031|event|param|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|7032|7039|toolTip|field|net.minecraftforge.event.entity.player.ItemTooltipEvent|toolTip
+      @|pw\xwy\skyblockutils\PlayerListener.java|7040|7043|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|7082|7087|event|param|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|7088|7095|toolTip|field|net.minecraftforge.event.entity.player.ItemTooltipEvent|toolTip
+      @|pw\xwy\skyblockutils\PlayerListener.java|7096|7099|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|7113|7119|counts|field|pw.xwy.skyblockutils.PlayerListener|counts
+      @|pw\xwy\skyblockutils\PlayerListener.java|7120|7132|getOrDefault|method|java.util.Map|getOrDefault|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|pw\xwy\skyblockutils\PlayerListener.java|7133|7138|event|param|pw.xwy.skyblockutils.PlayerListener|onTooltip|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|7139|7148|itemStack|field|net.minecraftforge.event.entity.player.ItemTooltipEvent|itemStack
+      @|pw\xwy\skyblockutils\PlayerListener.java|7149|7163|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+   Method End: onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+   Method Start: onRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Text;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|7211|7219|onRender|method|pw.xwy.skyblockutils.PlayerListener|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Text;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|7220|7247|RenderGameOverlayEvent.Text|class|net.minecraftforge.client.event.RenderGameOverlayEvent.Text
+      @|pw\xwy\skyblockutils\PlayerListener.java|7248|7253|event|param|pw.xwy.skyblockutils.PlayerListener|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Text;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|7264|7274|onSkyblock|field|pw.xwy.skyblockutils.PlayerListener|onSkyblock
+      @|pw\xwy\skyblockutils\PlayerListener.java|7286|7295|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|7301|7310|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|7311|7323|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|7329|7341|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|pw\xwy\skyblockutils\PlayerListener.java|7360|7369|ingameGUI|field|net.minecraft.client.Minecraft|ingameGUI
+      @|pw\xwy\skyblockutils\PlayerListener.java|7370|7385|getFontRenderer|method|net.minecraft.client.gui.GuiIngame|getFontRenderer|()Lnet/minecraft/client/gui/FontRenderer;
+      @|pw\xwy\skyblockutils\PlayerListener.java|7391|7397|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|7414|7437|drawStringAtHUDPosition|method|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|7438|7456|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\PlayerListener.java|7457|7461|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|pw\xwy\skyblockutils\PlayerListener.java|7476|7488|HUDPositions|class|pw.xwy.skyblockutils.PlayerListener.HUDPositions
+      @|pw\xwy\skyblockutils\PlayerListener.java|7489|7497|TOP_LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|7537|7560|drawStringAtHUDPosition|method|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|7561|7579|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\PlayerListener.java|7580|7584|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|pw\xwy\skyblockutils\PlayerListener.java|7606|7618|HUDPositions|class|pw.xwy.skyblockutils.PlayerListener.HUDPositions
+      @|pw\xwy\skyblockutils\PlayerListener.java|7619|7627|TOP_LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|7672|7680|warnings|field|pw.xwy.skyblockutils.PlayerListener|warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|7681|7688|isEmpty|method|java.util.Collection|isEmpty|()Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|7697|7720|drawStringAtHUDPosition|method|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|7721|7739|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\PlayerListener.java|7740|7743|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|pw\xwy\skyblockutils\PlayerListener.java|7760|7772|HUDPositions|class|pw.xwy.skyblockutils.PlayerListener.HUDPositions
+      @|pw\xwy\skyblockutils\PlayerListener.java|7773|7781|TOP_LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|7841|7849|Warnings|class|pw.xwy.skyblockutils.PlayerListener.Warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|7859|7867|warnings|field|pw.xwy.skyblockutils.PlayerListener|warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|7875|7898|drawStringAtHUDPosition|method|pw.xwy.skyblockutils.PlayerListener|drawStringAtHUDPosition|(Ljava/lang/String;Lpw/xwy/skyblockutils/PlayerListener$HUDPositions;Lnet/minecraft/client/gui/FontRenderer;IIDIZI)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|7899|7917|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\PlayerListener.java|7918|7921|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|pw\xwy\skyblockutils\PlayerListener.java|7933|7941|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|7945|7957|HUDPositions|class|pw.xwy.skyblockutils.PlayerListener.HUDPositions
+      @|pw\xwy\skyblockutils\PlayerListener.java|7958|7966|TOP_LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_LEFT
+   Method End: onRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Text;)V
+   Method Start: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8049|8055|onTick|method|pw.xwy.skyblockutils.PlayerListener|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8056|8081|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|pw\xwy\skyblockutils\PlayerListener.java|8082|8087|event|param|pw.xwy.skyblockutils.PlayerListener|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|8097|8106|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|8107|8119|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|8145|8154|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|8155|8167|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|8170|8178|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|pw\xwy\skyblockutils\PlayerListener.java|8198|8207|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|8213|8222|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|8223|8235|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|8242|8246|tick|field|pw.xwy.skyblockutils.PlayerListener|tick
+      @|pw\xwy\skyblockutils\PlayerListener.java|8256|8260|tick|field|pw.xwy.skyblockutils.PlayerListener|tick
+      @|pw\xwy\skyblockutils\PlayerListener.java|8263|8275|tickInterval|field|pw.xwy.skyblockutils.PlayerListener|tickInterval
+      @|pw\xwy\skyblockutils\PlayerListener.java|8294|8303|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|8324|8341|setArmorstandTags|method|pw.xwy.skyblockutils.PlayerListener|setArmorstandTags|()V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8348|8362|countInventory|method|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8366|8375|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|8381|8395|updateWarnings|method|pw.xwy.skyblockutils.PlayerListener|updateWarnings|([Z)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8396|8412|hasGrapplingHook|field|pw.xwy.skyblockutils.PlayerListener|hasGrapplingHook
+   Method End: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+   Method Start: setArmorstandTags()V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8437|8454|setArmorstandTags|method|pw.xwy.skyblockutils.PlayerListener|setArmorstandTags|()V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8466|8472|Entity|class|net.minecraft.entity.Entity
+      @|pw\xwy\skyblockutils\PlayerListener.java|8482|8491|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|8492|8504|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|8507|8515|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|pw\xwy\skyblockutils\PlayerListener.java|8516|8532|loadedEntityList|field|net.minecraft.world.World|loadedEntityList
+      @|pw\xwy\skyblockutils\PlayerListener.java|8561|8577|EntityArmorStand|class|net.minecraft.entity.item.EntityArmorStand
+      @|pw\xwy\skyblockutils\PlayerListener.java|8585|8601|EntityArmorStand|class|net.minecraft.entity.item.EntityArmorStand
+      @|pw\xwy\skyblockutils\PlayerListener.java|8616|8632|EntityArmorStand|class|net.minecraft.entity.item.EntityArmorStand
+      @|pw\xwy\skyblockutils\PlayerListener.java|8661|8676|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|pw\xwy\skyblockutils\PlayerListener.java|8702|8717|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|pw\xwy\skyblockutils\PlayerListener.java|8721|8728|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|pw\xwy\skyblockutils\PlayerListener.java|8742|8751|ItemSkull|class|net.minecraft.item.ItemSkull
+      @|pw\xwy\skyblockutils\PlayerListener.java|8771|8793|setAlwaysRenderNameTag|method|net.minecraft.entity.Entity|setAlwaysRenderNameTag|(Z)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8821|8836|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|pw\xwy\skyblockutils\PlayerListener.java|8866|8882|setCustomNameTag|method|net.minecraft.entity.Entity|setCustomNameTag|(Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8883|8901|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\PlayerListener.java|8902|8906|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|pw\xwy\skyblockutils\PlayerListener.java|8947|8963|setCustomNameTag|method|net.minecraft.entity.Entity|setCustomNameTag|(Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|8964|8982|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|pw\xwy\skyblockutils\PlayerListener.java|8983|8995|LIGHT_PURPLE|field|net.minecraft.util.EnumChatFormatting|LIGHT_PURPLE
+   Method End: setArmorstandTags()V
+   Method Start: countInventory(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|9046|9060|countInventory|method|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|9061|9073|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|9074|9080|player|param|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|9082|9091|ItemStack|class|net.minecraft.item.ItemStack
+      @|pw\xwy\skyblockutils\PlayerListener.java|9095|9100|items|param|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V|items|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|9110|9116|player|param|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|9140|9146|player|param|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|9147|9156|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|pw\xwy\skyblockutils\PlayerListener.java|9205|9211|counts|field|pw.xwy.skyblockutils.PlayerListener|counts
+      @|pw\xwy\skyblockutils\PlayerListener.java|9218|9225|HashMap|class|java.util.HashMap
+      @|pw\xwy\skyblockutils\PlayerListener.java|9233|9249|hasGrapplingHook|field|pw.xwy.skyblockutils.PlayerListener|hasGrapplingHook
+      @|pw\xwy\skyblockutils\PlayerListener.java|9266|9275|ItemStack|class|net.minecraft.item.ItemStack
+      @|pw\xwy\skyblockutils\PlayerListener.java|9288|9294|player|param|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|9295|9304|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|pw\xwy\skyblockutils\PlayerListener.java|9305|9318|mainInventory|field|net.minecraft.entity.player.InventoryPlayer|mainInventory
+      @|pw\xwy\skyblockutils\PlayerListener.java|9358|9368|stripColor|method|pw.xwy.skyblockutils.PlayerListener|stripColor|(Ljava/lang/String;)Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9379|9393|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9397|9413|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|9445|9452|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9466|9480|ItemFishingRod|class|net.minecraft.item.ItemFishingRod
+      @|pw\xwy\skyblockutils\PlayerListener.java|9489|9505|hasGrapplingHook|field|pw.xwy.skyblockutils.PlayerListener|hasGrapplingHook
+      @|pw\xwy\skyblockutils\PlayerListener.java|9524|9530|counts|field|pw.xwy.skyblockutils.PlayerListener|counts
+      @|pw\xwy\skyblockutils\PlayerListener.java|9531|9534|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9545|9559|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9563|9569|counts|field|pw.xwy.skyblockutils.PlayerListener|counts
+      @|pw\xwy\skyblockutils\PlayerListener.java|9570|9582|getOrDefault|method|java.util.Map|getOrDefault|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9593|9607|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9626|9635|stackSize|field|net.minecraft.item.ItemStack|stackSize
+      @|pw\xwy\skyblockutils\PlayerListener.java|9654|9663|ItemStack|class|net.minecraft.item.ItemStack
+      @|pw\xwy\skyblockutils\PlayerListener.java|9676|9681|items|param|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V|items|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|9688|9697|sendTitle|method|pw.xwy.skyblockutils.PlayerListener|sendTitle|(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|9698|9704|player|param|pw.xwy.skyblockutils.PlayerListener|countInventory|(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|9716|9730|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9742|9752|stripColor|method|pw.xwy.skyblockutils.PlayerListener|stripColor|(Ljava/lang/String;)Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9763|9777|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9781|9797|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|9829|9836|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9850|9864|ItemFishingRod|class|net.minecraft.item.ItemFishingRod
+      @|pw\xwy\skyblockutils\PlayerListener.java|9872|9888|hasGrapplingHook|field|pw.xwy.skyblockutils.PlayerListener|hasGrapplingHook
+      @|pw\xwy\skyblockutils\PlayerListener.java|9905|9911|counts|field|pw.xwy.skyblockutils.PlayerListener|counts
+      @|pw\xwy\skyblockutils\PlayerListener.java|9912|9915|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9926|9940|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9944|9950|counts|field|pw.xwy.skyblockutils.PlayerListener|counts
+      @|pw\xwy\skyblockutils\PlayerListener.java|9951|9963|getOrDefault|method|java.util.Map|getOrDefault|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|pw\xwy\skyblockutils\PlayerListener.java|9974|9988|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10007|10016|stackSize|field|net.minecraft.item.ItemStack|stackSize
+   Method End: countInventory(Lnet/minecraft/entity/player/EntityPlayer;[Lnet/minecraft/item/ItemStack;)V
+   Method Start: playerCheck(Lnet/minecraft/entity/Entity;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|10044|10055|playerCheck|method|pw.xwy.skyblockutils.PlayerListener|playerCheck|(Lnet/minecraft/entity/Entity;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|10056|10062|Entity|class|net.minecraft.entity.Entity
+      @|pw\xwy\skyblockutils\PlayerListener.java|10063|10069|entity|param|pw.xwy.skyblockutils.PlayerListener|playerCheck|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|10079|10088|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|10089|10101|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10115|10124|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|10125|10137|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10140|10148|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|pw\xwy\skyblockutils\PlayerListener.java|10160|10169|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|10170|10182|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10185|10194|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|10227|10236|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|10237|10249|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10252|10266|isSingleplayer|method|net.minecraft.client.Minecraft|isSingleplayer|()Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|10280|10286|entity|param|pw.xwy.skyblockutils.PlayerListener|playerCheck|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|10287|10298|getUniqueID|method|net.minecraft.entity.Entity|getUniqueID|()Ljava/util/UUID;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10301|10307|equals|method|java.util.UUID|equals|(Ljava/lang/Object;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|10308|10317|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|10318|10330|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10333|10342|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|10343|10354|getUniqueID|method|net.minecraft.entity.Entity|getUniqueID|()Ljava/util/UUID;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10371|10385|EntityPlayerMP|class|net.minecraft.entity.player.EntityPlayerMP
+      @|pw\xwy\skyblockutils\PlayerListener.java|10397|10411|getMultiplayer|method|pw.xwy.skyblockutils.PlayerListener|getMultiplayer|(Lnet/minecraft/entity/Entity;)Lnet/minecraft/entity/player/EntityPlayerMP;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10412|10418|entity|param|pw.xwy.skyblockutils.PlayerListener|playerCheck|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|10459|10465|entity|param|pw.xwy.skyblockutils.PlayerListener|playerCheck|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|10466|10477|getUniqueID|method|net.minecraft.entity.Entity|getUniqueID|()Ljava/util/UUID;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10480|10486|equals|method|java.util.UUID|equals|(Ljava/lang/Object;)Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|10496|10507|getUniqueID|method|net.minecraft.entity.Entity|getUniqueID|()Ljava/util/UUID;
+   Method End: playerCheck(Lnet/minecraft/entity/Entity;)Z
+   Method Start: sendMessage(Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|10556|10567|sendMessage|method|pw.xwy.skyblockutils.PlayerListener|sendMessage|(Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|10568|10574|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|10575|10579|text|param|pw.xwy.skyblockutils.PlayerListener|sendMessage|(Ljava/lang/String;)V|text|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|10585|10594|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|10595|10607|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10610|10619|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|10620|10634|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|10639|10656|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|pw\xwy\skyblockutils\PlayerListener.java|10657|10661|text|param|pw.xwy.skyblockutils.PlayerListener|sendMessage|(Ljava/lang/String;)V|text|0
+   Method End: sendMessage(Ljava/lang/String;)V
+   Method Start: sendTitle(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|10683|10692|sendTitle|method|pw.xwy.skyblockutils.PlayerListener|sendTitle|(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\PlayerListener.java|10693|10705|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|pw\xwy\skyblockutils\PlayerListener.java|10706|10712|player|param|pw.xwy.skyblockutils.PlayerListener|sendTitle|(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;)V|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|10714|10720|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|10721|10725|text|param|pw.xwy.skyblockutils.PlayerListener|sendTitle|(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;)V|text|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|10736|10749|isMultiplayer|method|pw.xwy.skyblockutils.PlayerListener|isMultiplayer|()Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|10763|10777|S45PacketTitle|class|net.minecraft.network.play.server.S45PacketTitle
+      @|pw\xwy\skyblockutils\PlayerListener.java|10796|10810|S45PacketTitle|class|net.minecraft.network.play.server.S45PacketTitle
+      @|pw\xwy\skyblockutils\PlayerListener.java|10811|10830|S45PacketTitle.Type|class|net.minecraft.network.play.server.S45PacketTitle.Type
+      @|pw\xwy\skyblockutils\PlayerListener.java|10831|10836|TITLE|field|net.minecraft.network.play.server.S45PacketTitle.Type|TITLE
+      @|pw\xwy\skyblockutils\PlayerListener.java|10842|10859|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|pw\xwy\skyblockutils\PlayerListener.java|10860|10864|text|param|pw.xwy.skyblockutils.PlayerListener|sendTitle|(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;)V|text|1
+      @|pw\xwy\skyblockutils\PlayerListener.java|10870|10884|EntityPlayerMP|class|net.minecraft.entity.player.EntityPlayerMP
+      @|pw\xwy\skyblockutils\PlayerListener.java|10896|10910|getMultiplayer|method|pw.xwy.skyblockutils.PlayerListener|getMultiplayer|(Lnet/minecraft/entity/Entity;)Lnet/minecraft/entity/player/EntityPlayerMP;
+      @|pw\xwy\skyblockutils\PlayerListener.java|10911|10917|player|param|pw.xwy.skyblockutils.PlayerListener|sendTitle|(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;)V|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|10958|10980|playerNetServerHandler|field|net.minecraft.entity.player.EntityPlayerMP|playerNetServerHandler
+      @|pw\xwy\skyblockutils\PlayerListener.java|10981|10991|sendPacket|method|net.minecraft.network.NetHandlerPlayServer|sendPacket|(Lnet/minecraft/network/Packet;)V
+   Method End: sendTitle(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;)V
+   Method Start: getMultiplayer(Lnet/minecraft/entity/Entity;)Lnet/minecraft/entity/player/EntityPlayerMP;
+      @|pw\xwy\skyblockutils\PlayerListener.java|11038|11052|getMultiplayer|method|pw.xwy.skyblockutils.PlayerListener|getMultiplayer|(Lnet/minecraft/entity/Entity;)Lnet/minecraft/entity/player/EntityPlayerMP;
+      @|pw\xwy\skyblockutils\PlayerListener.java|11023|11037|EntityPlayerMP|class|net.minecraft.entity.player.EntityPlayerMP
+      @|pw\xwy\skyblockutils\PlayerListener.java|11053|11059|Entity|class|net.minecraft.entity.Entity
+      @|pw\xwy\skyblockutils\PlayerListener.java|11060|11066|player|param|pw.xwy.skyblockutils.PlayerListener|getMultiplayer|(Lnet/minecraft/entity/Entity;)Lnet/minecraft/entity/player/EntityPlayerMP;|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|11076|11082|player|param|pw.xwy.skyblockutils.PlayerListener|getMultiplayer|(Lnet/minecraft/entity/Entity;)Lnet/minecraft/entity/player/EntityPlayerMP;|player|0
+      @|pw\xwy\skyblockutils\PlayerListener.java|11094|11108|EntityPlayerMP|class|net.minecraft.entity.player.EntityPlayerMP
+      @|pw\xwy\skyblockutils\PlayerListener.java|11123|11137|EntityPlayerMP|class|net.minecraft.entity.player.EntityPlayerMP
+      @|pw\xwy\skyblockutils\PlayerListener.java|11139|11145|player|param|pw.xwy.skyblockutils.PlayerListener|getMultiplayer|(Lnet/minecraft/entity/Entity;)Lnet/minecraft/entity/player/EntityPlayerMP;|player|0
+   Method End: getMultiplayer(Lnet/minecraft/entity/Entity;)Lnet/minecraft/entity/player/EntityPlayerMP;
+   Method Start: isMultiplayer()Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|11187|11200|isMultiplayer|method|pw.xwy.skyblockutils.PlayerListener|isMultiplayer|()Z
+      @|pw\xwy\skyblockutils\PlayerListener.java|11214|11223|Minecraft|class|net.minecraft.client.Minecraft
+      @|pw\xwy\skyblockutils\PlayerListener.java|11224|11236|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|pw\xwy\skyblockutils\PlayerListener.java|11239|11247|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|pw\xwy\skyblockutils\PlayerListener.java|11248|11256|isRemote|field|net.minecraft.world.World|isRemote
+   Method End: isMultiplayer()Z
+   Enum Start: pw.xwy.skyblockutils.PlayerListener.Warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|11275|11283|Warnings|class|pw.xwy.skyblockutils.PlayerListener.Warnings
+      @|pw\xwy\skyblockutils\PlayerListener.java|11288|11302|GRAPPLING_HOOK|field|pw.xwy.skyblockutils.PlayerListener.Warnings|GRAPPLING_HOOK
+      @|pw\xwy\skyblockutils\PlayerListener.java|11335|11341|String|class|java.lang.String
+      @|pw\xwy\skyblockutils\PlayerListener.java|11342|11349|display|field|pw.xwy.skyblockutils.PlayerListener.Warnings|display|
+      Method Start: Warnings(Ljava/lang/String;)V
+         @|pw\xwy\skyblockutils\PlayerListener.java|11354|11362|Warnings|method|pw.xwy.skyblockutils.PlayerListener.Warnings|Warnings|(Ljava/lang/String;)V
+         @|pw\xwy\skyblockutils\PlayerListener.java|11363|11369|String|class|java.lang.String
+         @|pw\xwy\skyblockutils\PlayerListener.java|11370|11371|s|param|pw.xwy.skyblockutils.PlayerListener.Warnings|Warnings|(Ljava/lang/String;)V|s|0
+         @|pw\xwy\skyblockutils\PlayerListener.java|11383|11390|display|field|pw.xwy.skyblockutils.PlayerListener.Warnings|display
+         @|pw\xwy\skyblockutils\PlayerListener.java|11393|11394|s|param|pw.xwy.skyblockutils.PlayerListener.Warnings|Warnings|(Ljava/lang/String;)V|s|0
+      Method End: Warnings(Ljava/lang/String;)V
+      Method Start: toString()Ljava/lang/String;
+         @|pw\xwy\skyblockutils\PlayerListener.java|11429|11437|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+         @|pw\xwy\skyblockutils\PlayerListener.java|11422|11428|String|class|java.lang.String
+         @|pw\xwy\skyblockutils\PlayerListener.java|11452|11459|display|field|pw.xwy.skyblockutils.PlayerListener.Warnings|display
+      Method End: toString()Ljava/lang/String;
+   Enum End  : pw.xwy.skyblockutils.PlayerListener.Warnings
+   Enum Start: pw.xwy.skyblockutils.PlayerListener.HUDPositions
+      @|pw\xwy\skyblockutils\PlayerListener.java|11482|11494|HUDPositions|class|pw.xwy.skyblockutils.PlayerListener.HUDPositions
+      @|pw\xwy\skyblockutils\PlayerListener.java|11499|11507|TOP_LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|11511|11521|TOP_CENTER|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_CENTER
+      @|pw\xwy\skyblockutils\PlayerListener.java|11525|11534|TOP_RIGHT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|TOP_RIGHT
+      @|pw\xwy\skyblockutils\PlayerListener.java|11538|11542|LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|11546|11551|RIGHT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|RIGHT
+      @|pw\xwy\skyblockutils\PlayerListener.java|11555|11566|BOTTOM_LEFT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|BOTTOM_LEFT
+      @|pw\xwy\skyblockutils\PlayerListener.java|11570|11582|BOTTOM_RIGHT|field|pw.xwy.skyblockutils.PlayerListener.HUDPositions|BOTTOM_RIGHT
+   Enum End  : pw.xwy.skyblockutils.PlayerListener.HUDPositions
+Class End  : pw.xwy.skyblockutils.PlayerListener
+endProcessing pw\xwy\skyblockutils\PlayerListener.java
+
+processing pw\xwy\skyblockutils\SkyblockUtils.java
+@|pw\xwy\skyblockutils\SkyblockUtils.java|8|28|pw.xwy.skyblockutils|package|pw.xwy.skyblockutils|(file)
+Class Start: pw.xwy.skyblockutils.SkyblockUtils
+   @|pw\xwy\skyblockutils\SkyblockUtils.java|314|328|PlayerListener|class|pw.xwy.skyblockutils.PlayerListener
+   @|pw\xwy\skyblockutils\SkyblockUtils.java|329|343|playerListener|field|pw.xwy.skyblockutils.SkyblockUtils|playerListener|
+   @|pw\xwy\skyblockutils\SkyblockUtils.java|350|364|PlayerListener|class|pw.xwy.skyblockutils.PlayerListener
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|405|409|init|method|pw.xwy.skyblockutils.SkyblockUtils|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|410|432|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|433|434|e|param|pw.xwy.skyblockutils.SkyblockUtils|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|e|0
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|440|446|System|class|java.lang.System
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|447|450|out|field|java.lang.System|out
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|451|458|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|487|501|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|502|511|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|512|520|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|521|535|playerListener|field|pw.xwy.skyblockutils.SkyblockUtils|playerListener
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|540|560|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|561|569|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|570|585|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|pw\xwy\skyblockutils\SkyblockUtils.java|590|604|MinionsCommand|class|pw.xwy.skyblockutils.MinionsCommand
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+Class End  : pw.xwy.skyblockutils.SkyblockUtils
+endProcessing pw\xwy\skyblockutils\SkyblockUtils.java
+

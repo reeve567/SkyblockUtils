@@ -1,0 +1,8 @@
+[{
+  "modid": "skyblockutils",
+  "name": "SkyblockUtils",
+  "description": "Just some simple skyblock utilities",
+  "version": "RELEASE",
+  "mcversion": "1.8.9",
+  "authorList": ["Xwy"]
+}]
