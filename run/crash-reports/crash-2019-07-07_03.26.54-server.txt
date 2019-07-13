@@ -5,8 +5,8 @@ Time: 7/7/19 3:26 AM
 Description: Ticking entity
 
 java.lang.NullPointerException: Ticking entity
-	at pw.xwy.skyblockutils.PlayerListener.countInventory(PlayerListener.java:120)
-	at pw.xwy.skyblockutils.PlayerListener.onOpenContainer(PlayerListener.java:104)
+	at pw.xwy.skyblockutils.listener.PlayerListener.countInventory(PlayerListener.java:120)
+	at pw.xwy.skyblockutils.listener.PlayerListener.onOpenContainer(PlayerListener.java:104)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_10_PlayerListener_onOpenContainer_PlayerOpenContainerEvent.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:49)
 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:140)
@@ -29,8 +29,8 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at pw.xwy.skyblockutils.PlayerListener.countInventory(PlayerListener.java:120)
-	at pw.xwy.skyblockutils.PlayerListener.onOpenContainer(PlayerListener.java:104)
+	at pw.xwy.skyblockutils.listener.PlayerListener.countInventory(PlayerListener.java:120)
+	at pw.xwy.skyblockutils.listener.PlayerListener.onOpenContainer(PlayerListener.java:104)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_10_PlayerListener_onOpenContainer_PlayerOpenContainerEvent.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:49)
 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:140)

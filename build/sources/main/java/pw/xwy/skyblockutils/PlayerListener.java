@@ -2,11 +2,18 @@ package pw.xwy.skyblockutils;
 
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
+import javafx.util.Pair;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.item.EntityArmorStand;
+import net.minecraft.entity.monster.*;
+import net.minecraft.entity.passive.EntityChicken;
+import net.minecraft.entity.passive.EntityCow;
+import net.minecraft.entity.passive.EntityPig;
+import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.inventory.ContainerChest;
@@ -26,10 +33,7 @@ import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -45,9 +49,26 @@ public class PlayerListener {
 	private boolean hasGrapplingHook = false;
 	private HashMap<String, Integer> counts = new HashMap<>();
 	private List<Warnings> warnings = new ArrayList<>();
+	private Map<Mob, Integer> mobCount = new HashMap<>();
+	private Map<Class<? extends EntityLiving>, Integer> mobCount2 = new HashMap<>();
+	private Map<Class<? extends EntityLiving>, String> mobNames = new HashMap<>();
+
 
 	public PlayerListener(SkyblockUtils main) {
 		this.main = main;
+		mobNames.put(EntitySpider.class,"Spiders");
+		mobNames.put(EntityZombie.class,"Zombies");
+		mobNames.put(EntityMagmaCube.class,"Magma Cubes");
+		mobNames.put(EntitySlime.class,"Slimes");
+		mobNames.put(EntityCreeper.class,"Creepers");
+		mobNames.put(EntitySkeleton.class,"Skeletons");
+		mobNames.put(EntityEnderman.class, "Endermen");
+		mobNames.put(EntityBlaze.class,"Blazes");
+		mobNames.put(EntityGhast.class,"Ghasts");
+		mobNames.put(EntitySheep.class,"Sheep");
+		mobNames.put(EntityPig.class,"Pigs");
+		mobNames.put(EntityChicken.class,"Chickens");
+		mobNames.put(EntityCow.class,"Cows");
 	}
 
 	public static void drawStringAtHUDPosition(String string, HUDPositions position, FontRenderer fontRenderer, int xOffset, int yOffset, int lineOffset) {
@@ -70,7 +91,7 @@ public class PlayerListener {
 				break;
 			case TOP_RIGHT:
 				yOffset += lineOffset * 9;
-				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, 2 + yOffset,0, true);
+				drawStringRight(string, fontRenderer, screenWidth - 2 + xOffset, 2 + yOffset, 0, true);
 				break;
 			case LEFT:
 				yOffset += lineOffset * 9;
@@ -194,13 +215,20 @@ public class PlayerListener {
 			drawStringAtHUDPosition(EnumChatFormatting.GREEN + "Sprint Toggle", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
 		}
 
-		if (!onSkyblock) return;
-
 		String debug = "?";
 		drawStringAtHUDPosition(EnumChatFormatting.GOLD + "Debug: " + debug, HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
 
+		if (main.mobsToggle) {
+			drawStringAtHUDPosition(EnumChatFormatting.GREEN + "Mobs:",HUDPositions.TOP_LEFT,fontRenderer,0,0,i++);
+			for (Map.Entry<Class<? extends EntityLiving>,Integer> entry: mobCount2.entrySet()) {
+				drawStringAtHUDPosition(EnumChatFormatting.GREEN + "    " + mobNames.get(entry.getKey()) + ": " + EnumChatFormatting.WHITE + entry.getValue(),HUDPositions.TOP_LEFT,fontRenderer,0,0,i++);
+			}
+		}
+
+		if (!onSkyblock) return;
+
 		if (!warnings.isEmpty()) {
-			drawStringAtHUDPosition(EnumChatFormatting.RED + "Warnings: ", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
+			drawStringAtHUDPosition(EnumChatFormatting.RED + "Warnings:", HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
 
 			for (Warnings w : this.warnings) {
 				drawStringAtHUDPosition(EnumChatFormatting.RED + "  " + w.toString(), HUDPositions.TOP_LEFT, fontRenderer, 0, 0, i++);
@@ -217,24 +245,42 @@ public class PlayerListener {
 		tick++;
 		if (tick % tickInterval == 0) {
 			if (mc.thePlayer == null) return;
-			setArmorstandTags();
+			checkEntities();
 			countInventory(mc.thePlayer);
 			updateWarnings(hasGrapplingHook);
 		}
 	}
 
-	private void setArmorstandTags() {
-		if (!onSkyblock) return;
+	private void checkEntities() {
+		mobCount2 = new HashMap<>();
 		for (Entity entity : Minecraft.getMinecraft().theWorld.loadedEntityList) {
-			if (entity instanceof EntityArmorStand) {
-				EntityArmorStand armorStand = (EntityArmorStand) entity;
-				if (armorStand.getCurrentArmor(3) != null && armorStand.getCurrentArmor(3).getItem() instanceof ItemSkull) {
-					armorStand.setAlwaysRenderNameTag(true);
-					if (armorStand.getCurrentArmor(2) != null)
-						armorStand.setCustomNameTag(EnumChatFormatting.GOLD + "Minion");
-					else
-						armorStand.setCustomNameTag(EnumChatFormatting.LIGHT_PURPLE + "Fairy Soul");
+			setArmorstandTag(entity);
+			mobCount(entity);
+		}
+	}
+
+	private void mobCount(Entity entity) {
+		if (main.mobsToggle) {
+			if (entity instanceof EntityLiving) {
+				EntityLiving ent = (EntityLiving) entity;
+				if (mobNames.containsKey(ent.getClass())) {
+					mobCount2.put(ent.getClass(), mobCount2.getOrDefault(ent.getClass(),0) + 1);
 				}
+			}
+		}
+	}
+
+	private void setArmorstandTag(Entity entity) {
+		if (!onSkyblock) return;
+
+		if (entity instanceof EntityArmorStand) {
+			EntityArmorStand armorStand = (EntityArmorStand) entity;
+			if (armorStand.getCurrentArmor(3) != null && armorStand.getCurrentArmor(3).getItem() instanceof ItemSkull) {
+				armorStand.setAlwaysRenderNameTag(true);
+				if (armorStand.getCurrentArmor(2) != null)
+					armorStand.setCustomNameTag(EnumChatFormatting.GOLD + "Minion");
+				else
+					armorStand.setCustomNameTag(EnumChatFormatting.LIGHT_PURPLE + "Fairy Soul");
 			}
 		}
 	}
@@ -310,6 +356,37 @@ public class PlayerListener {
 
 		@Override
 		public String toString() {
+			return display;
+		}
+	}
+
+	public enum Mob {
+		SPIDER(EntitySpider.class, "Spiders"),
+		MAGMA_CUBE(EntityMagmaCube.class, "Magma Cubes"),
+		SLIME(EntitySlime.class, "Slimes"),
+		ZOMBIE(EntityZombie.class, "Zombies"),
+		SKELETON(EntitySkeleton.class, "Skeletons"),
+		ENDERMAN(EntityEnderman.class, "Endermen"),
+		CREEPER(EntityCreeper.class, "Creepers"),
+		COW(EntityCow.class, "Cows"),
+		SHEEP(EntitySheep.class, "Sheep"),
+		CHICKEN(EntityChicken.class, "Chickens"),
+		PIG(EntityPig.class, "Pigs"),
+		BLAZE(EntityBlaze.class, "Blazes"),
+		GHAST(EntityGhast.class, "Ghasts");
+		private Class<? extends EntityLiving> clazz;
+		private String display;
+
+		Mob(Class<? extends EntityLiving> clazz, String display) {
+			this.clazz = clazz;
+			this.display = display;
+		}
+
+		public Class<? extends EntityLiving> getClazz() {
+			return clazz;
+		}
+
+		public String getDisplay() {
 			return display;
 		}
 	}
